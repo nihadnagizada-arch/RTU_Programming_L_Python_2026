@@ -28,11 +28,13 @@ Examples (these are also used to check your work):
 """
 
 # TODO: import math
+import math
 
 
 def circle_area(radius: float) -> float:
     """Return the area of a circle given its radius (unrounded)."""
     # TODO: implement formula using math.pi
+    return math.pi * (radius**2)
     raise NotImplementedError("circle_area() is not implemented yet")
 
 
@@ -40,4 +42,7 @@ if __name__ == "__main__":
     # Keep all input() calls inside this block, otherwise the autograder
     # cannot import your file.
     # TODO: ask for user input, call circle_area(), and print formatted result
+    radius = float(input("Enter the radius: "))
+    area = circle_area(radius)
+    print(f"Area of the circle: {area:.2f}")
     pass
